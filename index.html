@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Simplex</title>
+<meta charset="utf-8">
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/form.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script>
+$(document).ready(function () {
+    $('.slider_wrapper')._TMS({
+        show: 0,
+        pauseOnHover: false,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 800,
+        preset: 'fade',
+        pagination: true, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: 'fade',
+        waitBannerAnimation: false,
+        progressBar: false
+    });
+});
+$(document).ready(function () {
+    ! function () {
+        var map = [],
+            names = [],
+            win = $(window),
+            header = $('header'),
+            currClass
+            $('.content').each(function (n) {
+                map[n] = this.offsetTop
+                names[n] = $(this).attr('id')
+            })
+            win
+                .on('scroll', function () {
+                    var i = 0
+                    while (map[i++] <= win.scrollTop());
+                    if (currClass !== names[i - 2])
+                        currClass = names[i - 2]
+                    header.removeAttr("class").addClass(names[i - 2])
+                })
+    }();
+});
+function goToByScroll(id) {
+    $('html,body').animate({
+        scrollTop: $("#" + id).offset().top
+    }, 'slow');
+}
+$(document).ready(function () {
+    $().UItoTop({
+        easingType: 'easeOutQuart'
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body>
+<header class="page1">
+  <div class="container_12">
+    <div class="grid_12">
+      <h1><a href="#" onClick="goToByScroll('page1'); return false;"><img src="images/logo.png" alt=""></a></h1>
+      <div class="menu_block">
+        <nav class="">
+          <ul class="sf-menu">
+            <li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Love </a> <strong class="hover"></strong></li>
+            <li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">Said</a><strong class="hover"></strong></li>
+            <li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">To</a> <strong class="hover"></strong></li>
+            <li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">My</a> <strong class="hover"></strong></li>
+            <li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Girlfriend</a> <strong class="hover"></strong></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</header>
+<div id="page1" class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="slider_wrapper">
+        <ul class="items">
+          <li> <img src="images/spacer.gif" alt="">
+            <div class="caption banner">
+              <h2>门前大桥下</h2>
+            </div>
+          </li>
+          <li> <img src="images/spacer.gif" alt="">
+            <div class="caption banner">
+              <h2>游过一群鸭</h2>
+            </div>
+          </li>
+          <li> <img src="images/spacer.gif" alt="">
+            <div class="caption banner">
+              <h2>快来 快来 数一数</h2>
+            </div>
+          </li>
+          <li> <img src="images/spacer.gif" alt="">
+            <div class="caption banner">
+              <h2>二 四 六 七 八</h2>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+    </div>
+  </div>
+</div>
+<div id="page2" class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="slogan"> 
+        <h3> If I could, <a onClick="goToByScroll('page3'); return false;" href="#"><span>I would wrap my arms around you and</span></a><a onClick="goToByScroll('page4'); return false;" href="#"><em>just hold you until the hurt went away.</em></a></h3>
+        <div class="text1"> <a href="#" class="tm_link"> You are my today and all of my tomorrows.</a> <br>
+          </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/ai.png" alt="">
+        <div class="text1"><a href="#"></a></div>
+        
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="https://ca.linkedin.com/in/ramtin-rakhsha-0734b739"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/ni.png" alt="">
+        <div class="text1"><a href="#"></a></div>
+        
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/gei.png" alt="">
+        <div class="text1"><a href="#"></a></div>
+
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/xin.png" alt="">
+        <div class="text1"><a href="#"></a></div>
+        
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="page3" class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="slogan">
+        <h3>我想挽着你的手，敬各位来宾的酒</h3>
+        <div class="text1"> 虽千万人，吾亦往矣 </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight1"> <img src="images/ji.png" alt="">
+        <div class="text1"><a href="#"></a></div>
+       </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight1"> <img src="images/de.png" alt="">
+        <div class="text1"><a href="#"></a></div>
+       </div>
+        </div>
+    <div class="grid_3">
+      <div class="box maxheight1"> <img src="images/xiang.png" alt="">
+        <div class="text1"><a href="#"></a></div>
+         </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight1"> <img src="images/wo.png" alt="">
+        <div class="text1"><a href="#"></a></div>
+        .</div>
+    </div>
+  </div>
+</div>
+<div id="page4" class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <h3>To Me You Are Pefect</h3>
+    </div>
+    <div class="companies">
+     
+		 <div class="grid_3"> <img src="images/keai.png" alt="">
+        <div class="text1">Cute</div>
+        无人能比<br>
+        <a href="#">Go to Site</a> </div>
+      <div class="grid_3"> <img src="images/chihuo.png" alt="">
+        <div class="text1">Chihuo</div>
+        好吃鬼 <br>
+        <a href="#">Go to Site</a> </div>
+      <div class="grid_3"> <img src="images/shuashuai.png" alt="">
+        <div class="text1">Cool</div>
+       我大哥最酷. <br>
+        <a href="#">Go to Site</a> </div>
+      <div class="grid_3"> <img src="images/fennu.png" alt="">
+        <div class="text1">Anger</div>
+        气到跺脚. <br>
+        <a href="#">Go to Site</a> </div>
+		 <div class="grid_3"> <img src="images/jingxi.png" alt="">
+        <div class="text1">Surprise</div>
+        两眼冒星星 <br>
+        <a href="#">Go to Site</a> </div>
+      <div class="grid_3"> <img src="images/haipa.png" alt="">
+        <div class="text1">Sad</div>
+        我见犹怜 <br>
+        <a href="#">Go to Site</a> </div>
+      <div class="grid_3"> <img src="images/kaixin.png" alt="">
+        <div class="text1">Happy</div>
+        开心果 <br>
+        <a href="#">Go to Site</a> </div>
+      <div class="grid_3"> <img src="images/daku.png" alt="">
+        <div class="text1">Cry</div>
+       哭到不饿 <br>
+        <a href="#">Go to Site</a> </div>
+		
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<div id="page5" class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="slogan">
+        <h3>我不知道未来我要怎么过，但我知道我的未来里必须有你</h3>
+        <div class="text1"> 静下来时想想你，觉得一切都美好得不可思议。</div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="map">
+      <div class="grid_3">
+        <div class="text1">寄信人</div>
+        <address>
+        <dl>
+          <dt>Your  Boyfriend </dt>
+          <dd><span>Freephone:</span>I MISS YOU</dd>
+          <dd><span>Telephone:</span>I LOVE YOU </dd>
+          
+        </dl>
+        </address>
+      </div>
+      <div class="grid_3">
+        <div class="text1">&nbsp;</div>
+        <figure class="">
+          <iframe src="images/aixin2.png"></iframe>
+        </figure>
+      </div>
+      <div class="grid_5 prefix_1">
+        <div class="text1">收信人</div>
+        <form id="form" action="#">
+          <div class="success_wrapper">
+            <div class="success">Contact form submitted!<br>
+              <strong>We will be in touch soon.</strong> </div>
+          </div>
+          <fieldset>
+            <label class="name">
+              <input type="text" value="Dear:">
+              <br class="clear">
+              <span class="error error-empty">*This is not a valid name.</span><span class="empty error-empty">*This field is required.</span> </label>
+            <label class="email">
+              <input type="text" value="Chen Star">
+              <br class="clear">
+              <span class="error error-empty">*This is not a valid email address.</span><span class="empty error-empty">*This field is required.</span> </label>
+            <label class="message">
+              <textarea>寄给你全宇宙的爱和自太古至永劫的思念。</textarea>
+              <br class="clear">
+              <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label>
+            <div class="clear"></div>
+            <div class="btns"><a data-type="submit" class="link1">Send</a>
+              <div class="clear"></div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="copy"> <a onClick="goToByScroll('page1'); return false;" href="#"><img src="images/logo.png" alt=""></a>  </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</footer>
+</body>
+</html>
